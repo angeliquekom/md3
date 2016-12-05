@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+        .grid line {
+          stroke: rgba(0,0,0,0.1);
+          shape-rendering: crispEdges;
+        }
+
+        .grid path {
+          stroke-width: 0;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="myId">My Test Element 1</div>
+        <div id="myId2">My Test Element 2</div>
+        <script src="build/app.all.js"></script>
+        <script>
+          var config = {
+            elementId: 'myId',
+            type: 'line',
+            values: [
+              {x:1, y:20},
+              {x:2, y:30},
+              {x:3, y:50},
+              {x:4, y:20},
+              {x:5, y:30},
+              {x:6, y:50}
+            ],
+            styles:{
+              svg: {
+                background: "#37474f"
+              },
+              line: {
+                color: "#FFFFFF",
+                background: "rgba(129, 212, 250, 0.6)"
+              }
+            }
+          };
+
+          var config1 = {
+            elementId: 'myId2',
+            type: 'donut',
+            values: [
+              {x:"Set2", y:30},
+              {x:"Set1", y:20},
+              {x:"Set3", y:50}
+            ],
+            styles:{
+              svg: {
+                background: "#37474f"
+              },
+              donut: {
+                color: "rgb(129, 212, 250)"
+              }
+            }
+          };
+
+          window.onload = function () {
+            Md3.vis(config);
+            Md3.vis(config1);
+          };
+
+        </script>
+    </body>
+<html>

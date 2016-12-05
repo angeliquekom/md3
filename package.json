@@ -1,0 +1,17 @@
+{
+  "name": "md3",
+  "version": "1.0.0",
+  "description": "material design vis library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angeliki Komianou",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "webpack": "*"
+  }
+}
